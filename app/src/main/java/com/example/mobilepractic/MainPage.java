@@ -157,8 +157,12 @@ public class MainPage extends AppCompatActivity {
     public void Menu(View v) {
         Intent intent = new Intent(MainPage.this, Menu.class);
         startActivity(intent);
-
     }
+    public void Profile(View v) {
+        Intent intent = new Intent(MainPage.this, UserProfile.class);
+        startActivity(intent);
+    }
+
     private class GetFeeling extends AsyncTask<Void, Void, String> {
 
         @Override
